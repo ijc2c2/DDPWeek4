@@ -31,7 +31,16 @@ shinyUI(fluidPage(
         mainPanel(
             plotOutput("plot1"),
             h3("Predicted Murder Rate per 100,000: "),
-            textOutput("pred")
+            textOutput("pred"),
+            h4("Description: "),
+            h4("This app uses the USArrests dataset in R. The app displays"),
+            h4("a basic plot of Murder Rate per 100,000 vs "),
+            h4("Assault Rate per 100,000. The user is able to "),
+            h4("see the trendline on the graph, but can toggle the line"),
+            h4("on or off. Additionally, the user can use the slider to"),
+            h4("calculate a specific Murder Rate estimate given"),
+            h4("a value on the slider for the Assault Rate."),
+            h4("Thanks for taking the time to look at this.")
         )
     )
 ))
